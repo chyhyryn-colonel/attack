@@ -32,6 +32,17 @@ docker run -it --rm chyhyryncolonel/attack:latest
 docker run -it --rm chyhyryncolonel/attack:latest app -p 50
 ```
 
+### How to stop docker container
+You need to open another terminal (`cmd.exe` on Windows) and type `docker ps` there. This will print a table like:
+```
+CONTAINER ID   IMAGE                    COMMAND   CREATED          STATUS          PORTS     NAMES
+0abf97aee9c9   chyhyryncolonel/attack   "app"     28 seconds ago   Up 27 seconds             flamboyant_ardinghelli
+```
+
+You need to get the `CONTAINER ID` value and run `docker kill 0abf97aee9c9`.
+
+**Pressing Ctrl+C in the docker terminal won't stop docker**.  
+
 ## VPN locations
 
 Here's a list of preferred locations to VPN when performing an attack. This is based on my analysis of resource availability.
