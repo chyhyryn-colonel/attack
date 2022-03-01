@@ -23,13 +23,13 @@ Just download and run. It will automatically refresh list of URLs to attack ever
 
 As simple as:
 ```
-docker run -it --rm chyhyryn-colonel/attack:latest
+docker run -it --rm chyhyryncolonel/attack:latest
 ```
 
 > NOTE! If you see that most of the websites have a **very low success rate** or **your computer freezes** consider reducing parallelism with "-p" flag. Default value (125) might be too much for Mac OS/Windows users.
 
 ```
-docker run -it --rm chyhyryn-colonel/attack:latest app -p 50
+docker run -it --rm chyhyryncolonel/attack:latest app -p 50
 ```
 
 ## VPN locations
